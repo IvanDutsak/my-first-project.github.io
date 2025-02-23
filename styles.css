@@ -467,3 +467,14 @@ body {
     padding: 2rem;
     font-style: italic;
 }
+
+.main-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--dark-gray);
+    text-align: center;
+    justify-content: center;
+}
