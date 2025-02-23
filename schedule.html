@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Розклад</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Загальні стилі -->
+        <link rel="stylesheet" href="schedule.css"> <!-- Специфічні стилі -->
+        <script src="schedule.js" defer></script>
+    </head>
+    
+<body>
+    <nav>
+        <ul>
+            <li><a href="schedule.html">Розклад</a></li>
+            <li><a href="saved.html">Збережені</a></li>
+            <li><a href="rating.html">Рейтинговий бал</a></li>
+        </ul>
+    </nav>
+    
+    <section id="schedule">
+        <div class="faculty-selection">
+            <h2>Оберіть факультет</h2>
+            <div id="faculties"></div>
+        </div>
+        
+        <div class="group-selection" style="display: none;">
+            <h2>Оберіть групу</h2>
+            <div id="groups"></div>
+        </div>
+        
+        <div class="schedule-view" style="display: none;">
+            <h2>Розклад занять</h2>
+            <table id="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Предмет</th>
+                        <th>Викладач</th>
+                        <th>Група</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button onclick="saveSchedule()">Зберегти розклад</button>
+        </div>
+    </section>
+</body>
+</html>
